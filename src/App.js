@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,Outlet } from "react-router-dom";
 export default function App() {
   return (
     <div>
@@ -11,7 +11,8 @@ export default function App() {
         <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link>
       </nav>
-      <h1>Bookkeeper!</h1>
+      {/* <h1>Bookkeeper!</h1> */}
+      <Outlet></Outlet>
     </div>
   );
 }
